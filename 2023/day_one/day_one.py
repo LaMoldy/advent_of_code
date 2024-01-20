@@ -1,7 +1,8 @@
 def get_file_content() -> list[str]:
-    file_path = "./input.txt"
-    file = open(file_path, "r")
-    return file.readlines()
+    file = open("input.txt", "r")
+    content = file.readlines()
+    file.close()
+    return content
 
 def get_numbers_per_line(input: list[str]) -> list[str]:
     nums = []
