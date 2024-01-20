@@ -1,4 +1,3 @@
-from os import walk
 import re
 
 def get_input() -> list[str]:
